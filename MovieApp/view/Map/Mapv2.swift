@@ -99,9 +99,10 @@ struct MapTestView: UIViewRepresentable {
 
 struct MapTestView_Previews: PreviewProvider {
     static var previews: some View {
-        MapTestView(coordinate: CLLocationCoordinate2D(latitude: 45.907841, longitude: 6.129384))
+        MapTestView(coordinate: CLLocationCoordinate2D(latitude: 45.8992, longitude: 6.1294))
     }
 }
+
 
 
 public func regionForLocation(_ coordinate: CLLocationCoordinate2D) -> MKCoordinateRegion {

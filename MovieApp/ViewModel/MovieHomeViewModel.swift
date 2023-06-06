@@ -13,6 +13,7 @@ class MovieHomeViewModel: ObservableObject {
     @Published var popular: [Movie] = []
     @Published var genres: [Genre] = []
     @Published var movies: [Movie] = []
+    @Published var searchResults: [Movie] = []
 
 
     static let apiKey = "9a8f7a5168ace33d2334ba1fe14a83fb"
@@ -58,6 +59,19 @@ class MovieHomeViewModel: ObservableObject {
             }
         }
     }
+    
+    func search(term: String) {
+            Task {
+                let url = URL(string: "https://api.themoviedb.org/3/search/movie?api_key=\(MovieHomeViewModel.apiKey)&language=en-US&page=1&include_adult=false&query=\(term)".addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)!)!
+                do {
+                    let (data, _) = try await URLSession.shared.data(from: url)
+                    let trendingResults = try JSONDecoder().decode(MovieList.self, from: data)
+                    searchResults = trendingResults.results
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+        }
 
 
 

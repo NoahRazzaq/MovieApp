@@ -29,8 +29,9 @@
 		EDD63BF52A2E2458003A3363 /* MovieTheaters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD63BF42A2E2458003A3363 /* MovieTheaters.swift */; };
 		EDDF74B52A1CC5F0005E5F55 /* MovieCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDF74B42A1CC5F0005E5F55 /* MovieCard.swift */; };
 		EDFDDCC42A2F0CF9004F318E /* Mapv2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDDCC32A2F0CF9004F318E /* Mapv2.swift */; };
-		EDFDDCC82A2F16A7004F318E /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDDCC72A2F16A7004F318E /* Map.swift */; };
 		EDFDDCCB2A2F2A56004F318E /* FaceIDAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDDCCA2A2F2A56004F318E /* FaceIDAuthenticator.swift */; };
+		EDFDDCD12A2F6176004F318E /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDDCD02A2F6176004F318E /* Map.swift */; };
+		EDFDDCD32A2F6D2C004F318E /* MovieResultList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDDCD22A2F6D2C004F318E /* MovieResultList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,8 +59,9 @@
 		EDD63BF42A2E2458003A3363 /* MovieTheaters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTheaters.swift; sourceTree = "<group>"; };
 		EDDF74B42A1CC5F0005E5F55 /* MovieCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCard.swift; sourceTree = "<group>"; };
 		EDFDDCC32A2F0CF9004F318E /* Mapv2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapv2.swift; sourceTree = "<group>"; };
-		EDFDDCC72A2F16A7004F318E /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		EDFDDCCA2A2F2A56004F318E /* FaceIDAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDAuthenticator.swift; sourceTree = "<group>"; };
+		EDFDDCD02A2F6176004F318E /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		EDFDDCD22A2F6D2C004F318E /* MovieResultList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResultList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				8B8BCEFA29A2DDFD0051F80A /* MovieListCard.swift */,
 				ED42F7322A1C9EE0006CC7B5 /* GenreButton.swift */,
 				EDDF74B42A1CC5F0005E5F55 /* MovieCard.swift */,
+				EDFDDCD22A2F6D2C004F318E /* MovieResultList.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -187,7 +190,7 @@
 		EDD63BE12A2DDE37003A3363 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				EDFDDCC72A2F16A7004F318E /* Map.swift */,
+				EDFDDCD02A2F6176004F318E /* Map.swift */,
 				EDFDDCC32A2F0CF9004F318E /* Mapv2.swift */,
 			);
 			path = Map;
@@ -289,15 +292,16 @@
 				ED42F72D2A1BADBC006CC7B5 /* MovieByGenre.swift in Sources */,
 				8B8BCEEF29A2CF930051F80A /* HomePageView.swift in Sources */,
 				8B8BCEED29A2CF930051F80A /* MovieApp.swift in Sources */,
-				EDFDDCC82A2F16A7004F318E /* Map.swift in Sources */,
 				EDFDDCCB2A2F2A56004F318E /* FaceIDAuthenticator.swift in Sources */,
 				8B8BCEFD29A2DE150051F80A /* MovieHomeViewModel.swift in Sources */,
 				EDDF74B52A1CC5F0005E5F55 /* MovieCard.swift in Sources */,
+				EDFDDCD32A2F6D2C004F318E /* MovieResultList.swift in Sources */,
 				8B8BCF0129A2DE330051F80A /* Movie.swift in Sources */,
 				8BAF3B1B29AD52CA00277E9E /* MovieDetailView.swift in Sources */,
 				ED42F7292A1B54D0006CC7B5 /* Genre.swift in Sources */,
 				EDFDDCC42A2F0CF9004F318E /* Mapv2.swift in Sources */,
 				EDD63BF52A2E2458003A3363 /* MovieTheaters.swift in Sources */,
+				EDFDDCD12A2F6176004F318E /* Map.swift in Sources */,
 				EDD63BEB2A2DE6A8003A3363 /* SplashView.swift in Sources */,
 				EDD63BED2A2E0121003A3363 /* MovieHeader.swift in Sources */,
 				EDD63BEF2A2E02DD003A3363 /* MovieOverview.swift in Sources */,

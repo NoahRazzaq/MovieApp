@@ -13,17 +13,7 @@ struct MovieApp: App {
         WindowGroup {
             TabView {
                 HomePageView()
-                    .tabItem {
-                        Image(systemName: "house.fill")
-                    }
-                    Text("Play")
-                        .tabItem {
-                            Image(systemName: "play.rectangle.on.rectangle.fill")
-                            }
-                    Text("Download")
-                        .tabItem {
-                        Image(systemName: "square.and.arrow.down")
-                                        }
+                 
             }
         }
     }
