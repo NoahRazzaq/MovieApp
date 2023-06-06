@@ -21,6 +21,7 @@ struct HomePageView: View {
         NavigationStack {
             VStack {
                 HStack {
+                    Spacer()
                     Text("Netflix")
                         .font(.title)
                         .foregroundColor(.red)
