@@ -17,7 +17,6 @@ struct MovieHeader: View {
                     Text(movie.title)
                         .font(.title)
                         .fontWeight(.bold)
-                        .padding(.top, 400)
                 }
             
             HStack(spacing: 10) {

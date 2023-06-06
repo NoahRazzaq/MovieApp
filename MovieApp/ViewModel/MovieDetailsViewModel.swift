@@ -17,7 +17,7 @@ class MovieDetailsViewModel: ObservableObject {
 
 
     func movieDetails(for movieID: Int) async {
-        let url = URL(string: "https://api.themoviedb.org/3/movie/\(movieID)?api_key=\(MovieDiscoverViewModel.apiKey)&language=en-US")!
+        let url = URL(string: "https://api.themoviedb.org/3/movie/\(movieID)?api_key=\(MovieHomeViewModel.apiKey)&language=en-US")!
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
             let movieDetail = try JSONDecoder().decode(MovieDetail.self, from: data)

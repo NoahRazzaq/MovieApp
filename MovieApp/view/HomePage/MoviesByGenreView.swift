@@ -11,7 +11,7 @@ import SwiftUI
 struct MoviesByGenreView: View {
     
     let genre: Genre
-    @StateObject var viewModel = MovieDiscoverViewModel()
+    @StateObject var viewModel = MovieHomeViewModel()
     @State private var movies: [Movie] = []
 
     var body: some View {
@@ -31,7 +31,6 @@ struct MoviesByGenreView: View {
                 }
                 .padding()
             }
-
         }
         .onAppear {
             viewModel.loadMoviesByGenre(for: genre.id) { fetchedMovies in

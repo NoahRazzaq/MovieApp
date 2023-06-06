@@ -8,7 +8,7 @@
 import Foundation
 
 @MainActor
-class MovieDiscoverViewModel: ObservableObject {
+class MovieHomeViewModel: ObservableObject {
 
     @Published var popular: [Movie] = []
     @Published var genres: [Genre] = []
@@ -20,7 +20,7 @@ class MovieDiscoverViewModel: ObservableObject {
 
     func loadPopular() {
         Task {
-            let url = URL(string: "https://api.themoviedb.org/3/movie/popular?api_key=\(MovieDiscoverViewModel.apiKey)&")!
+            let url = URL(string: "https://api.themoviedb.org/3/movie/popular?api_key=\(MovieHomeViewModel.apiKey)&")!
             do {
                 let (data, _) = try await URLSession.shared.data(from: url)
                 let movieList = try JSONDecoder().decode(MovieList.self, from: data)
@@ -33,7 +33,7 @@ class MovieDiscoverViewModel: ObservableObject {
     
     func loadGenres() {
         Task {
-            let url = URL(string: "https://api.themoviedb.org/3/genre/movie/list?api_key=\(MovieDiscoverViewModel.apiKey)")!
+            let url = URL(string: "https://api.themoviedb.org/3/genre/movie/list?api_key=\(MovieHomeViewModel.apiKey)")!
             do {
                 let (data, _) = try await URLSession.shared.data(from: url)
                 let genreResponse = try JSONDecoder().decode(GenreModel.self, from: data)
@@ -47,7 +47,7 @@ class MovieDiscoverViewModel: ObservableObject {
     
     func loadMoviesByGenre(for genreId: Int, completion: @escaping ([Movie]) -> Void) {
         Task {
-            let url = URL(string: "https://api.themoviedb.org/3/discover/movie?api_key=\(MovieDiscoverViewModel.apiKey)&language=en-US&page=1&with_genres=\(genreId)")!
+            let url = URL(string: "https://api.themoviedb.org/3/discover/movie?api_key=\(MovieHomeViewModel.apiKey)&language=en-US&page=1&with_genres=\(genreId)")!
             do {
                 let (data, _) = try await URLSession.shared.data(from: url)
                 let moviesResponse = try JSONDecoder().decode(MovieByGenre.self, from: data)

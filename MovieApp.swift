@@ -1,6 +1,6 @@
 //
 //  MovieLookupApp.swift
-//  MovieLookup
+//  MovieApp
 //
 //  Created by digital on 04/04/2023.
 //
@@ -12,7 +12,7 @@ struct MovieApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
-                SplashView()
+                HomePageView()
                     .tabItem {
                         Image(systemName: "house.fill")
                     }

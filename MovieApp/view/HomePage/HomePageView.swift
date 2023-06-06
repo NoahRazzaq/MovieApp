@@ -12,7 +12,7 @@ import MapKit
 
 struct HomePageView: View {
 
-    @StateObject var viewModel = MovieDiscoverViewModel()
+    @StateObject var homeViewModel = MovieHomeViewModel()
     
     @State private var showMapView = false
     @StateObject private var locationManager = LocationManager()
@@ -29,7 +29,7 @@ struct HomePageView: View {
                 .fontWeight(.bold)
 
             ScrollView {
-                    if viewModel.popular.isEmpty {
+                    if homeViewModel.popular.isEmpty {
                         Text("No movie found")
                     } else {
                         VStack {
@@ -40,7 +40,7 @@ struct HomePageView: View {
 
                                 ScrollView(.horizontal, showsIndicators: false) {
                                     HStack(spacing: 10) {
-                                        ForEach(viewModel.genres, id: \.self) { genre in
+                                        ForEach(homeViewModel.genres, id: \.self) { genre in
                                             NavigationLink {
                                                 MoviesByGenreView(genre: genre)
                                             } label: {
@@ -63,11 +63,11 @@ struct HomePageView: View {
                             
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack {
-                                ForEach(viewModel.popular) { popularItem in
+                                ForEach(homeViewModel.popular) { popularItem in
                                     Button(action: {
                                         selectedMovie = popularItem
                                     }) {
-                                        TrendingCard(trendingItem: popularItem)
+                                        MovieListCard(movie: popularItem)
                                     }
                                 }
                             }
@@ -110,8 +110,8 @@ struct HomePageView: View {
         }
     
         .onAppear {
-            viewModel.loadPopular()
-            viewModel.loadGenres()
+            homeViewModel.loadPopular()
+            homeViewModel.loadGenres()
         }
     }
 }

@@ -8,13 +8,13 @@
 import Foundation
 import SwiftUI
 
-struct TrendingCard: View {
+struct MovieListCard: View {
 
-    let trendingItem: Movie
+    let movie: Movie
 
     var body: some View {
         ZStack(alignment: .bottom) {
-            AsyncImage(url: trendingItem.backdropURL) { image in
+            AsyncImage(url: movie.backdropURL) { image in
                 image
                     .resizable()
                     .scaledToFill()
@@ -26,15 +26,12 @@ struct TrendingCard: View {
 
             VStack {
                 HStack {
-                    Text(trendingItem.title)
+                    Text(movie.title)
                         .foregroundColor(.white)
                         .fontWeight(.heavy)
-            
                 }
-               
             }
             .padding()
-    
         }
         .cornerRadius(10)
     }
