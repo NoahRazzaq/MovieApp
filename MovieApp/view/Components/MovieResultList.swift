@@ -43,7 +43,7 @@ struct MovieResultList: View {
                 }
             }
             .sheet(item: $selectedMovie) { movie in
-                MovieDetailView(movie: movie)
+                MovieDetailModalView(movie: movie)
             }
         }
     }

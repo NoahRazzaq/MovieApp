@@ -32,6 +32,7 @@
 		EDFDDCCB2A2F2A56004F318E /* FaceIDAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDDCCA2A2F2A56004F318E /* FaceIDAuthenticator.swift */; };
 		EDFDDCD12A2F6176004F318E /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDDCD02A2F6176004F318E /* Map.swift */; };
 		EDFDDCD32A2F6D2C004F318E /* MovieResultList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDDCD22A2F6D2C004F318E /* MovieResultList.swift */; };
+		EDFDDCD52A2F741F004F318E /* MovieDetailModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDDCD42A2F741F004F318E /* MovieDetailModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		EDFDDCCA2A2F2A56004F318E /* FaceIDAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDAuthenticator.swift; sourceTree = "<group>"; };
 		EDFDDCD02A2F6176004F318E /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		EDFDDCD22A2F6D2C004F318E /* MovieResultList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResultList.swift; sourceTree = "<group>"; };
+		EDFDDCD42A2F741F004F318E /* MovieDetailModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				EDD63BEC2A2E0121003A3363 /* MovieHeader.swift */,
 				EDD63BEE2A2E02DD003A3363 /* MovieOverview.swift */,
 				EDD63BF02A2E0444003A3363 /* MovieButtons.swift */,
+				EDFDDCD42A2F741F004F318E /* MovieDetailModalView.swift */,
 			);
 			path = MovieDetails;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				8B8BCEFB29A2DDFD0051F80A /* MovieListCard.swift in Sources */,
 				EDD63BDC2A2DBE75003A3363 /* FaceIDView.swift in Sources */,
 				ED42F72D2A1BADBC006CC7B5 /* MovieByGenre.swift in Sources */,
+				EDFDDCD52A2F741F004F318E /* MovieDetailModalView.swift in Sources */,
 				8B8BCEEF29A2CF930051F80A /* HomePageView.swift in Sources */,
 				8B8BCEED29A2CF930051F80A /* MovieApp.swift in Sources */,
 				EDFDDCCB2A2F2A56004F318E /* FaceIDAuthenticator.swift in Sources */,
@@ -437,9 +441,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MovieApp/Info.plist;
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "Veuillez vous authentifier avec Face ID pour accéder à l'application.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate with Face ID to access the application.\n\n\n\n\n";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Besoin d'accéder à votre position pour afficher la carte";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Besoin d'accéder à votre position pour afficher la carte";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need to access your location to display the map.\n\n\n\n\n";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -470,9 +474,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MovieApp/Info.plist;
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "Veuillez vous authentifier avec Face ID pour accéder à l'application.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate with Face ID to access the application.\n\n\n\n\n";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Besoin d'accéder à votre position pour afficher la carte";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Besoin d'accéder à votre position pour afficher la carte";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need to access your location to display the map.\n\n\n\n\n";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

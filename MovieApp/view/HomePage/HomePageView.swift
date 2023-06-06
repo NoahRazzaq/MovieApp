@@ -34,11 +34,11 @@ struct HomePageView: View {
                         Text("No movie found")
                     } else {
                         ScrollView {
-                            VStack {
+                            VStack (alignment: .leading){
                             Text("Genres")
                                 .font(.title)
                                 .fontWeight(.heavy)
-                                .padding(.top)
+                                .padding(.leading)
                             
                             ScrollView(.horizontal, showsIndicators: false) {
                                 HStack(spacing: 10) {
@@ -75,7 +75,7 @@ struct HomePageView: View {
                                 .padding(.horizontal)
                             }
                             .sheet(item: $selectedMovie) { movie in
-                                MovieDetailView(movie: movie)
+                                MovieDetailModalView(movie: movie)
                             }
                             VStack {
                                 HStack {
@@ -118,7 +118,7 @@ struct HomePageView: View {
         }
         .onChange(of: searchText) { newValue in
             if newValue.count > 2 {
-                homeViewModel.search(term: newValue)
+                homeViewModel.searchMovies(term: newValue)
             }
         }
     }

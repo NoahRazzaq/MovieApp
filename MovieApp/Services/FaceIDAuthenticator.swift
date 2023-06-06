@@ -14,7 +14,7 @@ class FaceIDAuthenticator {
         var error: NSError?
 
         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-            let reason = "Authentification avec FaceID pour accéder à l'application"
+            let reason = "Authentication with Face ID to access the application"
 
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
                 DispatchQueue.main.async {
@@ -30,7 +30,7 @@ class FaceIDAuthenticator {
                 }
             }
         } else {
-            completion(false, "Face ID n'est pas disponible")
+            completion(false, "Face ID is not available")
         }
     }
 }

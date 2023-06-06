@@ -60,7 +60,7 @@ class MovieHomeViewModel: ObservableObject {
         }
     }
     
-    func search(term: String) {
+    func searchMovies(term: String) {
             Task {
                 let url = URL(string: "https://api.themoviedb.org/3/search/movie?api_key=\(MovieHomeViewModel.apiKey)&language=en-US&page=1&include_adult=false&query=\(term)".addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)!)!
                 do {

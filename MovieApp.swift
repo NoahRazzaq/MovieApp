@@ -12,7 +12,7 @@ struct MovieApp: App {
     var body: some Scene {
         WindowGroup {
             TabView {
-                HomePageView()
+                SplashView()
                  
             }
         }

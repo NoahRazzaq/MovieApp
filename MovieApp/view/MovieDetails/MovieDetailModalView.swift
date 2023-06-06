@@ -1,14 +1,14 @@
 //
-//  MovieDetailView.swift
+//  MovieDetailModalView.swift
 //  MovieApp
 //
-//  Created by digital on digital on 04/04/2023.
+//  Created by digital on 06/06/2023.
 //
 
 import Foundation
 import SwiftUI
 
-struct MovieDetailView: View {
+struct MovieDetailModalView: View {
 
     @StateObject var model = MovieDetailsViewModel()
     let movie: Movie
@@ -47,7 +47,7 @@ struct MovieDetailView: View {
                     }
                     .padding(.horizontal)
                 }
-                .offset(y: 160)
+                .offset(y: headerHeight)
             }
             .task {
                 await model.movieDetails(for: movie.id)
@@ -55,10 +55,13 @@ struct MovieDetailView: View {
     }
 }
 
-struct MovieDetailView_Previews: PreviewProvider {
+
+
+
+
+
+struct MovieDetailModalView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetailView(movie: .preview)
+        MovieDetailModalView( movie: .preview)
     }
 }
-
-
