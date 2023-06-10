@@ -1,4 +1,6 @@
 # MovieApp
+#
+#
 
 📄 Description
 Ceci est une application de streaming basée sur Netflix, développée avec Swift en utilisant l'API The Movie DB. L'application offre des fonctionnalités telles que la liste des films populaires, une barre de recherche pour effectuer des recherches, ainsi qu'une fiche détaillée pour chaque film.
