@@ -16,12 +16,12 @@ class MovieHomeViewModel: ObservableObject {
     @Published var searchResults: [Movie] = []
 
 
-    static let apiKey = "9a8f7a5168ace33d2334ba1fe14a83fb"
+    static let apiKey = "ddafcae466ac0e875e889ee257681ccb"
     
 
     func loadPopular() {
         Task {
-            let url = URL(string: "https://api.themoviedb.org/3/movie/popular?api_key=\(MovieHomeViewModel.apiKey)&")!
+            let url = URL(string: "https://api.themoviedb.org/3/movie/popular?api_key=\(MovieHomeViewModel.apiKey)")!
             do {
                 let (data, _) = try await URLSession.shared.data(from: url)
                 let movieList = try JSONDecoder().decode(MovieList.self, from: data)
