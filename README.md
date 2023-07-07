@@ -30,4 +30,5 @@ Ceci est une application de streaming basée sur Netflix, développée avec Swif
 Pour démarrer le projet, vous aurez besoin d'un Mac avec Xcode configuré. Clonez le dépôt de ce projet en local sur votre ordinateur. Ensuite, ouvrez l'application dans Xcode et exécutez-la sur un iPhone ou un émulateur pour tester l'application.
 
 ## 🎥 Démo
-[![Video](https://img.youtube.com/vi/8AgpWk0UNQY/0.jpg)](https://youtu.be/8AgpWk0UNQY)
+[![Video](https://img.youtube.com/vi/8AgpWk0UNQY/0.jpg)](https://www.youtube.com/watch?v=8AgpWk0UNQY)
+
